@@ -1,0 +1,88 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.flex-container > div {
+
+    line-height: 70px;
+    width: 70px;
+    margin: 1px;
+
+    justify-content: center;
+    background-color: deeppink;
+}
+.flex-container >div2{
+
+    line-height: 70px;
+    width: 70px;
+    margin: 1px;
+
+    justify-content: center;
+    background-color: blue;
+}
+.flex-container > div3 {
+
+    line-height: 70px;
+    width: 70px;
+    margin: 1px;
+
+    justify-content: center;
+    background-color: darkviolet;
+}
+.flex-container > div4{
+
+    line-height: 70px;
+    width: 70px;
+    margin: 1px;
+
+    justify-content: center;
+    background-color: orangered;
+}
+.flex-container >div5{
+
+    line-height: 70px;
+    width: 70px;
+    margin: 1px;
+
+    justify-content: center;
+    background-color: chocolate;
+}
+.flex-container > div6 {
+
+    line-height: 70px;
+    width: 70px;
+    margin: 3px;
+
+    justify-content: center;
+    background-color: salmon;
+}
+.flex-container > div7{
+
+    line-height: 70px;
+    width: 70px;
+    margin: 1px;
+
+    justify-content: center;
+    background-color: yellow;
+}
+.flex-container >div8{
+
+    line-height: 70px;
+    width: 70px;
+    margin: 1px;
+
+    justify-content: center;
+    background-color: green;
+}
+.flex-container > div9 {
+
+    line-height: 70px;
+    width: 70px;
+    margin: 1px;
+
+    justify-content: center;
+    background-color: black;
+}
+
