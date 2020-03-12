@@ -1,0 +1,64 @@
+.image{
+  height:70em; background-size:cover; width:100%;
+  background-image:url('https://image.shutterstock.com/image-vector/business-candle-stick-graph-chart-600w-1571766235.jpg');
+  background-position:50% 50%;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+div {
+  display: block;
+}
+
+.title {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 8px 20px 20px 20px;
+  color: rgba(0,0,0,.54);
+}
+
+.title img {
+  flex: 1 1 auto;
+  float: left;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.title h1 {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  font-family: cursive;
+}
+
+
+.content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+
+}
+
+.container {
+  display: block;
+}
+
+.title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Software Development</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+    <style>
+
+        .noshow
+
+        {
+
+            display:none;
+
+        }
+
+
+
+    </style>
+
+
+
+</head>
+
+<body >
+
+<h2 >Software Development
+
+</h2><br>
+
+<div id="select" align="center">
+
+    <label style="font-size: x-large;font-weight: bold">Course Level: </label>
+
+    <select  id="s" style="font-size: large ;width:20% ;align: center">
+
+        <option value="G" selected>Advanced</option>
+
+        <option value="U">Basic</option>
+
+
+
+    </select>
+
+</div>
+
+<br><br>
+
+<div class="table-responsive" id="G">
+
+    <table class="table" border="1" cellspacing="0" cellpadding="10" style="text-align: center" align="center">
+
+        <tr style="background-color: lightgrey;color: steelblue">
+
+            <th></th>
+
+            <th>Course Title</th>
+
+            <th>Offered by</th>
+
+            <th>Duration</th>
+
+            <th>Level</th>
+
+            <th>Rating</th>
+
+            <th>Students Enrolled till Date</th>
+
+            <th>Seats remainining</th>
+
+            <th class="disp"></th>
+
+        </tr>
+
+        <tr>
+
+            <td><img src="python.png" width="50" height="50"></td>
+
+            <td>Python</td>
+
+            <td>
+                University of Michigan
+
+            </td>
+
+            <td>
+
+                48 hours
+
+            </td>
+
+            <td>
+
+                Mixed
+
+            </td>
+
+            <td>
+
+                4.4
+
+            </td>
+
+            <td>2.3 Million</td>
+
+            <td>18</td>
+
+            <td class="disp"><a href="#" onclick="enroll(this,'NA')"> <img src="enroll.png" width="150" height="50"></a></td>
+
+        </tr>
+
+        <tr>
+
+            <td><img src="java.png" width="50" height="50"></td>
+
+            <td>Java</td>
+
+            <td>
+
+                IBM
+
+            </td>
+
+            <td>
+
+                65 hours
+
+            </td>
+
+            <td>
+
+                Intermediate
+
+            </td>
+
+            <td>
+
+               4.2
+
+            </td>
+
+            <td>3.5 Million</td>
+
+            <td>23</td>
+
+            <td class="disp"></td>
+
+        </tr>
+
+        <tr>
+
+            <td><img src="C%20sharp.jpg" width="50" height="50"></td>
+
+            <td>C Sharp</td>
+
+            <td>
+
+                University of Texas
+
+            </td>
+
+            <td>
+
+                56 hours
+
+            </td>
+
+            <td>
+
+                Beginner
+
+            </td>
+
+            <td>
+
+                4.6
+
+            </td>
+
+            <td>3.5 Million</td>
+
+            <td>32</td>
+
+            <td class="disp"></td>
+
+        </tr>
+
+        <tr>
+
+            <td><img src="web.jpg" width="50" height="50"></td>
+
+            <td>Web Development</td>
+
+            <td>
+
+                University of Alberta
+
+            </td>
+
+            <td>
+
+                72 hours
+
+            </td>
+
+            <td>
+
+                Mixed
+
+            </td>
+
+            <td>
+
+                4.5
+
+            </td>
+
+            <td>5.5 Million</td>
+
+            <td>16</td>
+
+            <td class="disp"><a href="#" onclick="enroll(this,'CC')"> <img src="enroll.png" width="150" height="50"></a></td>
+
+        </tr>
+
+        <tr>
+
+            <td><img src="Database.jpg" width="50" height="50"></td>
+
+            <td>Database Management</td>
+
+            <td>
+
+                Stanford University
+
+            </td>
+
+            <td>
+
+                44 hours
+
+            </td>
+
+            <td>
+
+                Intermediate
+
+            </td>
+
+            <td>
+
+                3.9
+
+            </td>
+
+            <td>3.2 Million</td>
+
+            <td>25</td>
+
+            <td class="disp"><a href="#" onclick="enroll(this,'FSS')"> <img src="enroll.png" width="150" height="50"></a></td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="noshow table-responsive" id="U" >
+
+    <!---------------------------------------------------------------------------->
+
+    <table class="table" border="1" cellspacing="0" cellpadding="10" style="text-align: center" align="center">
+
+        <tr style="background-color: lightgrey;color: steelblue">
+
+            <th></th>
+
+            <th>Course Title</th>
+
+            <th>Offered by</th>
+
+            <th>Duration</th>
+
+            <th>Level</th>
+
+            <th>Rating</th>
+
+            <th>Students Enrolled till Date</th>
+
+            <th>Seats remainining</th>
+
+            <th class="disp"></th>
+
+        </tr>
+
+        <tr>
+
+            <td><img src="C.jpg" width="50" height="50"></td>
+
+            <td>C Programming</td>
+
+            <td>
+
+                Texas A&M University
+
+            </td>
+
+            <td>
+
+                32 hours
+
+            </td>
+
+            <td>
+
+                Beginner
+
+            </td>
+
+            <td>
+
+                4.6
+
+            </td>
+
+            <td>3.8 Million</td>
+
+            <td>30</td>
+
+            <td class="disp"><a href="#" onclick="enroll(this,'C')"> <img src="enroll.png" width="150" height="50"></a></td>
+
+        </tr>
+
+        <tr>
+
+            <td><img src="OS.jpg" width="50" height="50"></td>
+
+            <td>Operating Systems</td>
+
+            <td>
+
+                University of Southern California
+
+            </td>
+
+            <td>
+
+                45 hours
+
+            </td>
+
+            <td>
+
+                Intermediate
+
+            </td>
+
+            <td>
+
+                4.2
+
+            </td>
+
+            <td>4.1 Million</td>
+
+            <td>28</td>
+
+            <td class="disp"><a href="#" onclick="enroll(this,'OS')"> <img src="enroll.png" width="150" height="50"></a></td>
+
+        </tr>
+        <tr>
+
+            <td><img src="DS.jpg" width="50" height="50"></td>
+
+            <td>Data Structures</td>
+
+            <td>
+
+                University of Houston
+
+            </td>
+
+            <td>
+
+                52 hours
+
+            </td>
+
+            <td>
+
+                Beginner
+
+            </td>
+
+            <td>
+
+                   4.6
+
+            </td>
+
+            <td>5.1 Million</td>
+
+            <td>14</td>
+
+            <td class="disp"><a href="#" onclick="enroll(this,'DS')"> <img src="enroll.png" width="150" height="50"></a></td>
+
+        </tr>
+
+        <tr>
+
+            <td><img src="MySQL.png" width="50" height="50"></td>
+
+            <td>SQL</td>
+
+            <td>
+
+                North Carolina State University
+
+            </td>
+
+            <td>
+
+                39 hours
+
+            </td>
+
+            <td>
+
+                Beginner
+
+            </td>
+
+            <td>
+
+               4.9
+
+            </td>
+
+            <td>3.5 Million</td>
+
+            <td>12</td>
+
+            <td class="disp"></td>
+
+        </tr>
+
+        <tr>
+
+            <td><img src="iot.jpg" width="50" height="50"></td>
+
+            <td>Internet of things</td>
+
+            <td>
+
+                Columbia University
+
+            </td>
+
+            <td>
+
+                65 hours
+
+            </td>
+
+            <td>
+
+                Intermediate
+
+            </td>
+
+            <td>
+
+                3.6
+
+            </td>
+
+            <td>2 Million</td>
+
+            <td>25</td>
+
+            <td class="disp"></td>
+
+        </tr>
+
+
+
+    </table>
+
+    <!------------------------------------------------------------>
+
+
+
+</div>
+
+<script>
+
+    var cartarr = [];
+
+    console.log($("#s"))
+
+    $("#s").on('change',function(){
+
+
+
+
+
+        if($(this)[0].value=='G')
+
+        {
+
+            $("#G").removeClass('noshow');
+
+            $("#U").addClass('noshow');
+
+        }
+
+        else if($(this)[0].value=='U')
+
+        {
+
+
+
+            $("#U").removeClass('noshow');
+
+            $("#G").addClass('noshow');
+
+
+
+        }
+
+    });
+
+    function enroll(obj,val) {
+
+        var res= $(obj).parent();
+
+        res[0].innerHTML='<strong style="color: green">Successfully enrolled </strong>';
+
+    }
+
+</script>
+
+
+
+<script>
+
+    var url=window.location.href;
+
+    console.log(url.indexOf('user='));
+
+
+
+    if(url.indexOf('user=')>=0)
+
+        var user = url.substring(url.indexOf('user=')+5,url.length);
+
+    console.log(user.indexOf('Guest'));
+
+    if(user.indexOf('Guest')>=0)
+
+    {
+
+        $('.disp').addClass('noshow');
+
+    }
+
+</script>
+
+</body>
+
+</html>
